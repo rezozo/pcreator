@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var mkdirp = require('mkdirp')
 var path = require('path')
 var inquirer = require('inquirer')
