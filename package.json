@@ -1,0 +1,21 @@
+{
+  "name": "pcreator",
+  "version": "1.0.0",
+  "description": "A simple project creator, like the one in IntelliJ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "pcreator": "index.js",
+    "pc": "index.js"
+  },
+  "author": "Jonathan Ohayon",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.0",
+    "inquirer": "^0.11.0",
+    "mkdirp": "^0.5.1",
+    "request": "^2.67.0"
+  }
+}
