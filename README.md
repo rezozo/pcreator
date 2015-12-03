@@ -2,7 +2,7 @@ PCreator (Project Creator)
 ---
 
 ##What is this thing?
-It's a terminal-based project scaffolder, like the one in IntelliJ but with less (or more?) library support for JavaScript.
+It's a terminal-based project scaffolder, similar to the one in IntelliJ but with less (or more?) library support for JavaScript.
 
 ##Why have you created it? There's Yeoman for this stuff...
 Because:
