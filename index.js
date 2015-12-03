@@ -58,7 +58,8 @@ function printHelp (err) {
       'Flags:',
       '  -h or --help - Shows help.'
     ]
-    return console.log(lines.join('\n'))
+    console.log(lines.join('\n'))
+    return process.exit(1)
   } else {
     var lns = [
       'Welcome to the PCreator v1.0 help!',
@@ -69,7 +70,8 @@ function printHelp (err) {
       'Flags:',
       '  -h or --help - Shows help.'
     ]
-    return console.log(lns.join('\n'))
+    console.log(lns.join('\n'))
+    return process.exit(1)
   }
 }
 
