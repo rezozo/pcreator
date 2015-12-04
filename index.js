@@ -53,7 +53,7 @@ function printHelp (err) {
       'Welcome to the PCreator v1.0 help!',
       '',
       'Usage:',
-      '  pcreator <project name> [project path] [flags]',
+      '  pcreator <project name> <project path> [flags]',
       '',
       'Flags:',
       '  -h or --help - Shows help.'
@@ -65,7 +65,7 @@ function printHelp (err) {
       'Welcome to the PCreator v1.0 help!',
       '',
       'Usage:',
-      '  pcreator <project name> [project path] [flags]',
+      '  pcreator <project name> <project path> [flags]',
       '',
       'Flags:',
       '  -h or --help - Shows help.'

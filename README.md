@@ -26,7 +26,7 @@ You don't need to sign up (yet...)! Just follow the tutorial:
 Usage:
 
 ```bash
-pcreator <project name> [project path] [flags]
+pcreator <project name> <project path> [flags]
 ```
 
 Flags:
