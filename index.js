@@ -328,7 +328,7 @@ function clientPrompt (cb) {
   inquirer.prompt([{
     type: 'checkbox',
     name: 'lib',
-    message: 'What code libraries do you want to use?',
+    message: 'What code libraries do you want to use in your project?',
     choices: [{
       name: 'AngularJS',
       value: 'angularjs'
