@@ -37,9 +37,9 @@ function check (e, i, a) {
 
 function getFilePath () {
   if (!process.argv[3]) {
-    return process.cwd()
+    return process.env.PWD
   } else if (/\//.test(process.argv[2]) || /\\/.test(process.argv[2]) || /..\//.test(process.argv[2]) || /..\\/.test(process.argv[2])) {
-    return path.join(process.cwd(), process.argv[3])
+    return path.join(process.env.PWD, process.argv[3])
   } else {
     return process.argv[3]
   }
