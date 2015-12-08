@@ -3,6 +3,7 @@
 var path = require('path')
 var inquirer = require('inquirer')
 var client = require('./client')
+var server = require('./server')
 
 Array.prototype.findIndex = function (predicate) {
   if (this === null) {
@@ -28,7 +29,7 @@ Array.prototype.findIndex = function (predicate) {
 function getFilePath () {
   if (!process.argv[3]) {
     return process.env.PWD
-  } else if (/\//.test(process.argv[2]) || /\\/.test(process.argv[2]) || /..\//.test(process.argv[2]) || /..\\/.test(process.argv[2])) {
+  } else if (!/\//.test(process.argv[2]) || !/\\/.test(process.argv[2]) || /..\//.test(process.argv[2]) || /..\\/.test(process.argv[2])) {
     return path.join(process.env.PWD, process.argv[3])
   } else {
     return process.argv[3]
@@ -69,10 +70,12 @@ if (!process.argv[2]) {
   printHelp('Project name is required')
 } else {
   var pTitle = process.argv[2]
-  var p = path.join(getFilePath(), process.argv[3])
+  var p = path.join(getFilePath(), process.argv[2])
   var jsd = path.join(p, 'js')
   var cssd = path.join(p, 'css')
   var imgd = path.join(p, 'img')
+  var viewd = path.join(p, 'views')
+  var publicd = path.join(p, 'public')
 }
 
 function init () {
@@ -99,6 +102,10 @@ function init () {
         })
       } else {
         console.log('Server project creation is not yet implemented... Sorry :(')
+        // server(pTitle, p, viewd, publicd).prompt(function (err) {
+        //   if (err) throw err
+        //   console.log('Done! The new project is located in %s', p)
+        // })
       }
     })
   }
